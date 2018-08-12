@@ -13,4 +13,10 @@
 
 `ipfs config --json API.HTTPHeaders.Access-Control-Expose-Headers '["Location"]'`
 
+## set the API access 
+`ipfs config Addresses.API`
+
+`ipfs config Addresses.API /ip4/127.0.0.1/tcp/5001`
+
+`ipfs daemon`
 
