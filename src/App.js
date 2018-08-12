@@ -79,7 +79,7 @@ class App extends Component {
             //see, this https://web3js.readthedocs.io/en/1.0/web3-eth-contract.html#methods-mymethod-send
 
 
-            storehash.methods.sendHash(this.state.ipfsHash).send({
+            storehash.methods.setHash(this.state.ipfsHash).send({
                 from: accounts[0]
             }, (error, transactionHash) => {
                 console.log(transactionHash);

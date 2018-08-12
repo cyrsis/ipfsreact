@@ -7,7 +7,7 @@ pragma solidity ^0.4.17;
 contract StoreHash {
     string ipfsHash;
 
-    function sendHash(string x) public {
+    function setHash(string x) public {
         ipfsHash = x;
     }
 
