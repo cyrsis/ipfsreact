@@ -5,6 +5,7 @@ import './App.css';
 import web3 from './web3';
 import ipfs from './ipfs';
 import storehash from './storehash';
+import QRCode from 'qrcode.react';
 
 class App extends Component {
 
@@ -93,7 +94,8 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1> Ethereum and InterPlanetary File System(IPFS) with Create React App</h1>
+                    <h1> Eternaland</h1>
+                    <h2>Blockchain for Legency</h2>
                 </header>
 
                 <hr/>
@@ -150,8 +152,14 @@ class App extends Component {
                         </tbody>
                     </Table>
                 </Grid>
+
+                <div>
+                    <QRCode value={"https://gateway.ipfs.io/ipfs/"+this.state.ipfsHash} />
+                {console.log(this.state.ipfsHash)}
             </div>
-        );
+    </div>
+    )
+        ;
     } //render
 }
 
